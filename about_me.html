@@ -4,7 +4,7 @@
     <style>
         /* CSS styling */
         body {
-            font-family: Arial, serif;
+            font-family: 'Times New Roman';
             margin: 0;
             padding: 0;
         }
@@ -12,23 +12,23 @@
         header {
         font-family: 'Times New Roman';
         font-size: x-large;
-        background: linear-gradient(to right, #333, #7393B3);
+        background: linear-gradient(to right, #333,#A05C7B,#E0ACD5, #6988a7);
         color: #fff;
         padding: 20px;
         text-align: center;
         background-size: 200% auto;
-        animation: gradientAnimation 5s infinite alternate;
+        animation: gradientAnimation 12s linear infinite;
         }
 
         @keyframes gradientAnimation {
             0% {
-                background-position: 0% 50%;
+                background-position: 10% 100%;
             }
             50% {
-                background-position: 100% 50%;
+                background-position: 100% 10%;
             }
             100% {
-                background-position: 0% 50%;
+                background-position: 10% 100%;
             }
         }
 
@@ -37,7 +37,7 @@
         }
 
         nav {
-            font-size: medium;
+            font-size: large;
             font-family: "Times New Roman";
             background-color: #f2f2f2;
             padding: 10px;
@@ -62,7 +62,11 @@
         }
 
         .about-section {
-            padding: 50px;
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            display: inline-block;
         }
 
         /* Other styles specific to the About Me section */
