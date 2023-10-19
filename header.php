@@ -1,12 +1,7 @@
-<!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Personal-Site</title>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
-    <script type="text/javascript" src="resume.js"></script>
-
     <style>
         /* CSS styling */
         body {
@@ -67,7 +62,6 @@
             padding: 5px;
         }
 
-
         /* Other styles specific to the About Me section */
 
     </style>
@@ -86,11 +80,5 @@
         </ul>
     </nav>
 
-
-    <div id="adobe-dc-view" style="width: 800px; box-shadow: 1px 1px 10px 1px #dadada;"></div>
-    <script type="text/javascript" src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
 </body>
 </html>
-    
-
-
