@@ -1,15 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ryan Bowser Resume!</title>
+    <title>Personal-Site</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
     <script type="text/javascript" src="resume.js"></script>
+
+    <style>
+        /* CSS styling */
+        body {
+            font-family: 'Times New Roman';
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+        font-family: 'Times New Roman';
+        font-size: x-large;
+        background: linear-gradient(to right, #333,#A05C7B,#E0ACD5, #6988a7);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        background-size: 200% auto;
+        animation: gradientAnimation 12s linear infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 10% 100%;
+            }
+            50% {
+                background-position: 100% 10%;
+            }
+            100% {
+                background-position: 10% 100%;
+            }
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            font-size: large;
+            font-family: "Times New Roman";
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px;
+        }
+
+
+        /* Other styles specific to the About Me section */
+
+    </style>
 </head>
-<!-- Customize page layout style according to your need and PDF file for best viewing experience -->
-<body style="margin: 100px 0 100px 200px;">
+<body>
+    <header>
+        <h1>Ryan Bowser</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about_me">About</a></li>
+            <li><a href="/monte_carlo">Projects</a></li>
+            <li><a href="/resume">Resume</a></li>
+        </ul>
+    </nav>
+
+
     <div id="adobe-dc-view" style="width: 800px; box-shadow: 1px 1px 10px 1px #dadada;"></div>
     <script type="text/javascript" src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
 </body>
 </html>
+    
+
+
