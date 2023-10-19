@@ -30,7 +30,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         content: {
             /* Location of file where it is hosted */
             location: {
-                URL: "https://github.com/maxwellbowser/maxwellbowser.github.io/blob/main/Resume.pdf",
+                URL: "https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf",
                 /*
                 If the file URL requires some additional headers, then it can be passed as follows:-
                 header: [
