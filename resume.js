@@ -9,9 +9,10 @@ then your use, modification, or distribution of it requires the prior
 written permission of Adobe.
 */
 
-/* Pass the embed mode option here */
+/* Control the default view mode */
 const viewerConfig = {
-    embedMode: "IN_LINE"
+    /* Allowed possible values are "FIT_PAGE", "FIT_WIDTH", "TWO_COLUMN", "TWO_COLUMN_FIT_PAGE" or "". */
+    defaultViewMode: "",
 };
 
 /* Wait for Adobe Acrobat Services PDF Embed API to be ready */
@@ -30,10 +31,10 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         content: {
             /* Location of file where it is hosted */
             location: {
-                URL: "https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf",
+                url: "https://maxwellbowser.github.io/documents/Resume.pdf",
                 /*
                 If the file URL requires some additional headers, then it can be passed as follows:-
-                header: [
+                headers: [
                     {
                         key: "<HEADER_KEY>",
                         value: "<HEADER_VALUE>",
@@ -45,7 +46,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         /* Pass meta data of file */
         metaData: {
             /* file name */
-            fileName: "Bodea Brochure.pdf"
+            fileName: "Resume.pdf"
         }
     }, viewerConfig);
 });
