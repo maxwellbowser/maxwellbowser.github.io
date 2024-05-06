@@ -33,9 +33,7 @@
       margin: 0 auto;
     }
 
-
     .topnav {
-      /* keeps top nav at the top of the page */
       position: fixed;
       top: 0;
       z-index: 9999;
@@ -43,30 +41,29 @@
       background-color: #333;
       width: 100%;
       overflow: hidden;
-      display: table;
-
-
+      display: flex;
+      justify-content: space-between;
+      /* Distribute items evenly */
+      align-items: center;
+      /* Vertically center items */
     }
 
-    /* Style the links inside the navigation bar */
     .topnav a {
-      float: left;
       color: #f2f2f2;
       text-align: center;
-      padding: 14px 16px;
+      padding: 14px 14px;
       text-decoration: none;
-      font-size: 17px;
-      display: table-cell;
-      vertical-align: middle;
+      font-size: x-large;
+      flex: 1;
+      /* Make links fill available space */
     }
 
     .topnav h1 {
-      float: left;
       text-align: center;
       color: #9ABC66;
-      padding: 0px 16px;
+      padding: 0 16px;
       text-decoration: none;
-      font-size: 30px;
+      font-size: xx-large;
     }
 
     .topnav a:hover {
@@ -114,15 +111,9 @@
     style="display: block; margin: 0 auto; width: 80%; height: 100%; overflow: visible; z-index: 999999;"></iframe>
 
 
-</body>
+  <section id="contact">
+    <h1> Contact Me </h1>
 
-</html>
-
-<html>
-<section id="contact">
-  <h2> Contact Me </h2>
-
-  <body>
     <form method="post" action="https://forms.un-static.com/forms/be3d0ddabf2abd8689ef3339fbb24c1f50ed8267">
       <div class="form-group row">
         <label for="name" class="col-4 col-form-label">Name</label>
@@ -163,7 +154,7 @@
     <div>
       <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
     </div>
-</section>
+  </section>
 </body>
 
 </html>
