@@ -10,6 +10,13 @@
       background: #EBF0F5;
     }
 
+    .alternate body {
+      text-align: center;
+      padding: 40px 0;
+      background: white;
+
+    }
+
     p {
       color: #404F5E;
       font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
@@ -17,20 +24,9 @@
       margin: 0;
     }
 
-    i {
-      color: #9ABC66;
-      font-size: 100px;
-      line-height: 200px;
-      margin-left: -15px;
-    }
-
-    .card {
-      background: white;
-      padding: 60px;
-      border-radius: 4px;
-      box-shadow: 0 2px 3px #C8D0D8;
-      display: inline-block;
-      margin: 0 auto;
+    a:link {
+      color: #3ba022;
+      text-decoration: none;
     }
 
     .topnav {
@@ -42,69 +38,194 @@
       font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
       background-color: #333;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 0 16px;
+      padding: 0 80px;
       /* Add some padding for scrollbar */
     }
 
     .topnav a {
       color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
+      padding: 14px 10px;
       text-decoration: none;
       font-size: x-large;
       flex: 1;
     }
 
     .topnav h1 {
-      text-align: center;
-      color: #9ABC66;
+      color: #4d9a3b;
       text-decoration: none;
       font-size: xx-large;
       margin: 0;
-      /* Remove default margin */
+      padding: 10px 0px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .topnav a:hover {
-      color: #9ABC66;
+      color: #4d9a3b;
+    }
+
+    h1 {
+      font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+      color: #333;
+    }
+
+    h2 {
+      font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+      color: #333;
+      font-size: 25px;
+    }
+
+    .float-container {
+      border: 3px solid #EBF0F5;
+      padding: 20px;
+      padding-top: 7%;
+    }
+
+    .float-profile {
+      width: 40%;
+      float: left;
+      padding: 0%;
+
+    }
+
+    .float-bio {
+      text-align: left;
+      width: 50%;
+      float: right;
+      padding-right: 6%;
+      padding-top: 3%;
+    }
+
+    .icon {
+      padding-left: 1.5%;
+      padding-right: 1.5%;
+    }
+
+    .icon:hover {
+      transform: scale(1.1);
+
+    }
+
+    .contact {
+      font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+      color: #333;
     }
   </style>
 </head>
 
 <div class="topnav">
   <a href="https://maxwellbowser.github.io">
-    <h1> Ryan Bowser </h1>
+    <h1> Ryan M. Bowser </h1>
   </a>
 
   <a class="active" href="#home">Home</a>
   <a href="#publications">Publications</a>
   <a href="/projects.html">Projects</a>
   <a href="#contact">Contact</a>
-  <a href="/documents/CV.pdf">CV</a>
+  <a href="/projects/CV.pdf">CV</a>
 </div>
 
 <body>
-  <h1>
-    "-____"
-  </h1>
+  <Section id=home>
+    <div class="float-container">
+      <div class="float-profile">
+        <img src="photos/Ryan_headshot.png" width="65%" alt="Headshot of Ryan Bowser">
+        <h2> Accelerated Master's Student <br> <a href="https://mcb.arizona.edu">
+            University of Arizona</a></h2>
 
-  <div class="Biography">
-    <h2>Biography</h2>
-    <p>I receieved my B.S. in <a style="text-decoration:none;" href="https://mcb.arizona.edu"> Molecular and Cellular
-        Biology</a> from the <a style="text-decoration:none;" href="https://www.arizona.edu"> University of Arizona</a>,
-      graduating summa cum laude. I am currently pursuing a M.S. in <a style="text-decoration:none;"
-        href="https://mcb.arizona.edu"> Molecular and Cellular
-        Biology</a> at the <a style="text-decoration:none;" href="https://www.arizona.edu"> University of Arizona</a>
-      through the Accelerated Masters Program, with <a style="text-decoration:none;"
-        href="https://labs.icahn.mssm.edu/gregoriolab/team/">
+        <!-- Links for icons under profile -->
+        <div>
+          <a href="mainto:ryanmaxwellbowser@gmail.com">
+            <img class="icon" src="photos/email.png" width="8%" alt="email icon">
+          </a>
+
+          <a href="https://github.com/maxwellbowser">
+            <img class="icon" src="photos/github.png" width="8%" alt="github icon">
+          </a>
+
+          <a href="https://www.instagram.com/ryan_bowz/">
+            <img class="icon" src="photos/insta.png" width="8%" alt="instagram icon">
+          </a>
+
+          <a href="https://www.linkedin.com/in/maxwellbowser/">
+            <img class="icon" src="photos/linkedin.png" width="8%" alt="linkedin icon">
+          </a>
+
+          <a href="https://orcid.org/0009-0007-5255-7467">
+            <img class="icon" src="photos/orcid.png" width="8%" alt="orcid id icon">
+          </a>
+        </div>
+
+
+      </div>
+  </Section>
+
+  <div class="float-bio">
+    <h1>Biography</h1>
+
+    <p>
+      I receieved my B.S. in <a href="https://mcb.arizona.edu">
+        Molecular
+        and Cellular
+        Biology</a> from the <a href="https://www.arizona.edu"> University of
+        Arizona</a>,
+      graduating summa cum laude. I am currently pursuing a M.S. in <a href="https://mcb.arizona.edu"> Molecular and
+        Cellular
+        Biology</a> at the <a href="https://www.arizona.edu"> University of Arizona</a>
+      through the Accelerated Masters Program, with <a href="https://labs.icahn.mssm.edu/gregoriolab/team/">
         Dr. Carol Gregorio</a> as my thesis advisor.
     </p>
+
+    <br>
+    <br>
+
+    <p>
+      I develop automated data analysis pipelines, such as our software <a style="text-decoration: none;"
+        href="https://github.com/maxwellbowser/philament">
+        Philament </a> for
+      in vitro motility (IVM), as well as various other pipelines for <a style="text-decoration: none;"
+        href="https://github.com/maxwellbowser/SCM_analysis"> single-cell mechanics</a> and <a
+        style="text-decoration: none;" href="https://link.springer.com/article/10.1007/BF00711932"> sinusoidal
+        perturbation</a>.
+      <br>
+      <br>
+
+      Outside of the lab, I am active in scientific education. I appeared on <a style="text-decoration: none;"
+        href="https://kxci.org/podcast/ryan-bowser/"> KXCI 91.3’s “Thesis Thursday” </a> segment, I
+      mentor high school students as a coordinator in the <a style="text-decoration: none;"
+        href="https://mcb.arizona.edu/outreach/star-lab"> STAR Lab</a>, and I love getting to talk about science to
+      students from kindergarten to high school!
+
+
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
   </div>
 
+  </div>
+</body>
+
+<div class="alternate">
+
+  <body>
 
 
-  <iframe src=" documents/monte_carlo.html"
+
+
+
+  </body>
+
+</div>
+
+<body>
+
+  <iframe src=" projects/monte_carlo.html"
     style="display: block; margin: 0 auto; width: 80%; height: 100%; overflow: visible; z-index: 999999;"></iframe>
 
 
@@ -113,54 +234,57 @@
     </h2>
   </div>
 
-  <iframe src="documents/strava.html"
+  <iframe src="projects/strava.html"
     style="display: block; margin: 0 auto; width: 80%; height: 100%; overflow: visible; z-index: 999999;"></iframe>
 
 
-  <section id="contact">
-    <h1> Contact Me </h1>
-
-    <form method="post" action="https://forms.un-static.com/forms/be3d0ddabf2abd8689ef3339fbb24c1f50ed8267">
-      <div class="form-group row">
-        <label for="name" class="col-4 col-form-label">Name</label>
-        <div class="col-8">
-          <div class="input-group">
-            <div class="input-group-addon">
-              <i class="fa fa-user"></i>
+  <!-- Contact me form code -->
+  <div class="contact">
+    <section id="contact">
+      <h1> Contact Me </h1>
+      <form method="post" action="https://forms.un-static.com/forms/be3d0ddabf2abd8689ef3339fbb24c1f50ed8267">
+        <div class="form-group row">
+          <label for="name" class="col-4 col-form-label">Name</label>
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-addon">
+                <i class="fa fa-user"></i>
+              </div>
+              <input id="name" name="name" placeholder="Please enter your name" type="text" required="required"
+                class="form-control">
             </div>
-            <input id="name" name="name" placeholder="Please enter your name" type="text" required="required"
-              class="form-control">
           </div>
         </div>
-      </div>
-      <div class="form-group row">
-        <label for="email" class="col-4 col-form-label">E-mail address</label>
-        <div class="col-8">
-          <div class="input-group">
-            <div class="input-group-addon">
-              <i class="fa fa-envelope"></i>
+        <div class="form-group row">
+          <label for="email" class="col-4 col-form-label">E-mail address</label>
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-addon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required"
+                class="form-control">
             </div>
-            <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required"
-              class="form-control">
           </div>
         </div>
-      </div>
-      <div class="form-group row">
-        <label for="message" class="col-4 col-form-label">Message</label>
-        <div class="col-8">
-          <textarea id="message" name="message" cols="40" rows="10" required="required" class="form-control"></textarea>
+        <div class="form-group row">
+          <label for="message" class="col-4 col-form-label">Message</label>
+          <div class="col-8">
+            <textarea id="message" name="message" cols="40" rows="10" required="required"
+              class="form-control"></textarea>
+          </div>
         </div>
-      </div>
-      <div class="form-group row">
-        <div class="offset-4 col-8">
-          <button name="submit" type="submit" class="btn btn-primary">Send</button>
+        <div class="form-group row">
+          <div class="offset-4 col-8">
+            <button name="submit" type="submit" class="btn btn-primary">Send</button>
+          </div>
         </div>
+      </form>
+      <div>
+        <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
       </div>
-    </form>
-    <div>
-      <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
-    </div>
-  </section>
+    </section>
+  </div>
 </body>
 
 </html>
