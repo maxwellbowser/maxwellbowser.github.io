@@ -1,157 +1,169 @@
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Personal-Site</title>
-    <style>
-        /* CSS styling */
-        body {
-            font-family: 'Times New Roman';
-            margin: 0;
-            padding: 0;
-        }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal-Site</title>
+  <style>
+    body {
+      text-align: center;
+      padding: 40px 0;
+      background: #EBF0F5;
+    }
 
-        header {
-        font-family: 'Times New Roman';
-        font-size: x-large;
-        background: linear-gradient(to right, #333,#A05C7B,#E0ACD5, #6988a7);
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-        background-size: 200% auto;
-        animation: gradientAnimation 12s linear infinite;
-        }
+    p {
+      color: #404F5E;
+      font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+      font-size: 20px;
+      margin: 0;
+    }
 
-        @keyframes gradientAnimation {
-            0% {
-                background-position: 10% 100%;
-            }
-            50% {
-                background-position: 100% 10%;
-            }
-            100% {
-                background-position: 10% 100%;
-            }
-        }
+    i {
+      color: #9ABC66;
+      font-size: 100px;
+      line-height: 200px;
+      margin-left: -15px;
+    }
 
-        h1 {
-            margin: 0;
-        }
+    .card {
+      background: white;
+      padding: 60px;
+      border-radius: 4px;
+      box-shadow: 0 2px 3px #C8D0D8;
+      display: inline-block;
+      margin: 0 auto;
+    }
 
-        nav {
-            font-size: large;
-            font-family: "Times New Roman";
-            background-color: #f2f2f2;
-            padding: 10px;
-            text-align: center;
-        }
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+    .topnav {
+      /* keeps top nav at the top of the page */
+      position: fixed;
+      top: 0;
+      z-index: 9999;
+      margin: 0 auto;
+      background-color: #333;
+      width: 100%;
+      overflow: hidden;
+      display: table;
 
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
 
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            padding: 5px;
-        }
+    }
 
-        .about-section {
-            padding-left: 25%;
-            padding-right: 25%;
-            padding-top: 3%;
-            padding-bottom: 3%;
-            display: inline-block;
-        }
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: table-cell;
+      vertical-align: middle;
+    }
 
-        /* Other styles specific to the About Me section */
+    .topnav h1 {
+      float: left;
+      text-align: center;
+      color: #9ABC66;
+      padding: 0px 16px;
+      text-decoration: none;
+      font-size: 30px;
+    }
 
-    </style>
+    .topnav a:hover {
+      color: #9ABC66;
+    }
+  </style>
 </head>
+
+<div class="topnav">
+  <a href="https://maxwellbowser.github.io">
+    <h1> Ryan Bowser </h1>
+  </a>
+
+  <a class="active" href="#home">Home</a>
+  <a href="#publications">Publications</a>
+  <a href="/projects.html">Projects</a>
+  <a href="#contact">Contact</a>
+  <a href="/documents/CV.pdf">CV</a>
+</div>
+
 <body>
-    <header>
-        <h1>Ryan Bowser</h1>
-    </header>
+  <h1>
+    "-____"
+  </h1>
 
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about_me">About</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/documents/Resume.pdf">CV</a></li>
-        </ul>
-    </nav>
+  <div class="about-section">
+    <h2>Biography</h2>
+    <p>I am currently a senior at the University of Arizona, working to finish my bachelor's degree in molecular and
+      cellular biology, while starting my graduate education in the same field via an accelerated masters program.
+    </p>
+  </div>
 
-    <div class="about-section">
-        <h2>Welcome!</h2>
-        <p>I am currently a senior at the University of Arizona, working to finish my bachelor's degree in molecular and cellular biology, while starting my graduate education in the same field via an accelerated masters program. </p>
-        <p>Morbi bibendum sapien sed ex lacinia, sit amet efficitur risus congue. Sed cursus purus mi, eu gravida mi pharetra id. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce a neque ex.</p>
-    </div>
-    
 
-    <div class ="about-section">
-        <p>
-            More about me!
-        </p>
 
-    </div>
+  <iframe src="documents/monte_carlo.html"
+    style="display: block; margin: 0 auto; width: 80%; height: 100%; overflow: visible; z-index: 999999;"></iframe>
 
-    <!-- Other sections and content of the About Me page -->
+
+  <div class="about-section">
+    <h2>
+    </h2>
+  </div>
+
+  <iframe src="documents/strava.html"
+    style="display: block; margin: 0 auto; width: 80%; height: 100%; overflow: visible; z-index: 999999;"></iframe>
+
 
 </body>
+
 </html>
 
 <html>
-<head>
-    <div align="center">
-        <h2> Contact Me </h2>
-</div>
-</head>
+<section id="contact">
+  <h2> Contact Me </h2>
 
-<body>
-<form method="post" action="https://forms.un-static.com/forms/YOUR_ENDPOINT_REFERENCE">
-  <div class="form-group row" align="center">
-    <label for="name" class="col-4 col-form-label">Name</label>
-    <div class="col-8">
-      <div class="input-group">
-        <div class="input-group-addon">
-          <i class="fa fa-user"></i>
+  <body>
+    <form method="post" action="https://forms.un-static.com/forms/be3d0ddabf2abd8689ef3339fbb24c1f50ed8267">
+      <div class="form-group row">
+        <label for="name" class="col-4 col-form-label">Name</label>
+        <div class="col-8">
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="fa fa-user"></i>
+            </div>
+            <input id="name" name="name" placeholder="Please enter your name" type="text" required="required"
+              class="form-control">
+          </div>
         </div>
-        <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="form-control">
       </div>
-    </div>
-  </div>
-  <div class="form-group row" align="center">
-    <label for="email" class="col-4 col-form-label">E-mail address</label>
-    <div class="col-8" align="center">
-      <div class="input-group">
-        <div class="input-group-addon" >
-          <i class="fa fa-envelope"></i>
+      <div class="form-group row">
+        <label for="email" class="col-4 col-form-label">E-mail address</label>
+        <div class="col-8">
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required"
+              class="form-control">
+          </div>
         </div>
-        <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="form-control">
       </div>
+      <div class="form-group row">
+        <label for="message" class="col-4 col-form-label">Message</label>
+        <div class="col-8">
+          <textarea id="message" name="message" cols="40" rows="10" required="required" class="form-control"></textarea>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="offset-4 col-8">
+          <button name="submit" type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </form>
+    <div>
+      <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
     </div>
-  </div>
-  <div class="form-group row" align="center">
-    <label for="message" class="col-4 col-form-label">Message</label>
-    <div class="col-8" align="center">
-      <textarea id="message" name="message" cols="40" rows="10" required="required" class="form-control"></textarea>
-    </div>
-  </div>
-  <div class="form-group row" align="center">
-    <div class="offset-4 col-8">
-      <button name="submit" type="submit" class="btn btn-primary">Send</button>
-    </div>
-  </div>
-</form>
-<div align="center">
-  <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
-</div>
+</section>
 </body>
+
 </html>
