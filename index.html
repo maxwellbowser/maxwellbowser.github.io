@@ -4,6 +4,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal-Site</title>
   <style>
+    .toggle,
+    .topnav .icon {
+      display: none;
+    }
+
+    @media (max-width: 850px) {
+
+      /* Styles for mobile devices */
+      .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .topnav a {
+        display: none;
+        text-align: left;
+        padding: 12px 16px;
+      }
+
+      .topnav a.active,
+      .topnav a:hover {
+        display: block;
+      }
+
+      .topnav h1 {
+        display: block;
+        padding: 12px 16px;
+        text-align: left;
+      }
+
+      .topnav .icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 12px 16px;
+        background-color: #333;
+        color: #f2f2f2;
+      }
+
+      .topnav input.toggle {
+        display: none;
+      }
+
+      .topnav input.toggle:checked~a {
+        display: block;
+      }
+
+      .topnav input.toggle:checked~h1 {
+        display: none;
+      }
+    }
+
     body {
       text-align: center;
       padding: 40px 0;
@@ -59,7 +112,7 @@
       text-decoration: none;
       font-size: xx-large;
       margin: 0;
-      padding: 10px 0px;
+      padding: 2px 0px;
       white-space: nowrap;
       flex-shrink: 0;
     }
@@ -118,11 +171,14 @@
 </head>
 
 <div class="topnav">
-  <a rel="noopener" href="https://maxwellbowser.github.io">
+  <input type="checkbox" id="toggle" class="toggle">
+  <label for="toggle" class="icon">&#9776;</label>
+
+  <a rel="noopener" class="active" href="https://maxwellbowser.github.io">
     <h1> Ryan M. Bowser </h1>
   </a>
 
-  <a rel="noopener" class="active" href="#home">Home</a>
+  <a rel="noopener" href="#home">Home</a>
   <a rel="noopener" href="#publications">Publications</a>
   <a rel="noopener" href="/projects.html">Projects</a>
   <a rel="noopener" href="#contact">Contact</a>
