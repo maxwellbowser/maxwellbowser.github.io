@@ -9,6 +9,20 @@
       display: none;
     }
 
+
+    body {
+      text-align: center;
+      padding: 40px 60px;
+      background: #EBF0F5;
+    }
+
+    .alternate body {
+      text-align: center;
+      padding: 40px 0;
+      background: white;
+
+    }
+
     @media (max-width: 850px) {
 
       /* Styles for mobile devices */
@@ -56,20 +70,30 @@
       .topnav input.toggle:checked~h1 {
         display: none;
       }
+
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .interests,
+      .education {
+        width: 100%;
+        margin: 0;
+      }
+
+      .interests {
+        order: 1;
+      }
+
+      .education {
+        order: 2;
+        margin-top: 20px;
+        /* Add some spacing between the lists */
+      }
     }
 
-    body {
-      text-align: center;
-      padding: 40px 0;
-      background: #EBF0F5;
-    }
 
-    .alternate body {
-      text-align: center;
-      padding: 40px 0;
-      background: white;
-
-    }
 
     p {
       color: #404F5E;
@@ -165,6 +189,67 @@
 
     }
 
+    .row {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+
+    }
+
+    .interests {
+
+      font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+      color: #333;
+      font-size: large;
+      margin-right: 15px;
+    }
+
+    .ul-interests {
+      font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+      color: #333;
+
+    }
+
+    .ul-interests li {
+      padding-bottom: 10px;
+
+    }
+
+    .education {
+      margin-left: 50px;
+    }
+
+
+    .ul-education li {
+      font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+      color: #333;
+      list-style: none;
+      font-size: large;
+      padding-bottom: px;
+      /* Remove the default bullet point */
+      padding-left: 10%;
+      /* Adjust the value as needed */
+      background-image: url("photos/grad_cap.png");
+      background-repeat: no-repeat;
+      background-size: 8%;
+      float: right;
+
+    }
+
+    .interests,
+    .education {
+      width: 50%;
+      /* Adjust the value as needed */
+    }
+
+    .sub-list li {
+      color: #aaa4a4;
+      list-style: none;
+      background-image: none;
+      float: left;
+      padding-bottom: 25px;
+    }
+
     @media (max-width: 850px) {
       .float-container {
         display: flex;
@@ -220,7 +305,7 @@
   <a rel="noopener" href="#publications">Publications</a>
   <a rel="noopener" href="/projects.html">Projects</a>
   <a rel="noopener" href="#contact">Contact</a>
-  <a rel="noopener" href="/projects/CV.pdf">CV</a>
+  <a rel="noopener" href="/documents/CV.pdf">CV</a>
 </div>
 
 <body>
@@ -277,7 +362,6 @@
     </p>
 
     <br>
-    <br>
 
     <p>
       I develop automated data analysis pipelines, such as our software <a target="_blank" rel="noopener"
@@ -302,11 +386,45 @@
 
     </p>
     <br>
+
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+    <div class="row">
+      <div class="interests">
+        <h2>Interests</h2>
+        <ul class="ul-interests">
+          <li> Python Scripting </li>
+          <li> Data Analysis Pipelines</li>
+          <li> Induced Pluripotent Stem Cells (iPSCs)</li>
+          <li> Cardiovascular Disease </li>
+          <li> Acto-Myosin Interactions & Regulation </li>
+
+        </ul>
+      </div>
+
+      <div class="education">
+        <h2> Education</h2>
+
+        <ul class="ul-education">
+
+          <li>MS, Molecular and Cellular Biology, 2025 Expected</li>
+          <ul class="sub-list">
+            <li>University of Arizona, Tucson, AZ</li>
+          </ul>
+
+          <li>BS, Molecular and Cellular Biology, 2024</li>
+          <ul class="sub-list">
+            <li>University of Arizona, Tucson, AZ</li>
+          </ul>
+
+
+
+        </ul>
+
+
+      </div>
+
+    </div>
 
   </div>
 
@@ -327,7 +445,7 @@
 
 <body>
 
-  <iframe src=" projects/monte_carlo.html"
+  <iframe src=" documents/monte_carlo.html"
     style="display: block; margin: 0 auto; width: 80%; height: 100%; overflow: visible; z-index: 999999;"></iframe>
 
 
@@ -336,7 +454,7 @@
     </h2>
   </div>
 
-  <iframe src="projects/strava.html"
+  <iframe src="documents/strava.html"
     style="display: block; margin: 0 auto; width: 80%; height: 100%; overflow: visible; z-index: 999999;"></iframe>
 
 
