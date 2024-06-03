@@ -10,6 +10,12 @@
     }
 
 
+    .interests,
+    .education {
+      width: 50%;
+      /* Adjust the value as needed */
+    }
+
     body {
       text-align: center;
       padding: 40px 60px;
@@ -21,13 +27,6 @@
       padding: 40px 0;
       background: white;
 
-    }
-
-
-    .interests,
-    .education {
-      width: 50%;
-      /* Adjust the value as needed */
     }
 
     @media (max-width: 850px) {
@@ -296,6 +295,35 @@
     .contact {
       font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
       color: #333;
+      max-width: 500px;
+      /* Adjust the maximum width as needed */
+      margin: 0 auto;
+      /* Center the container horizontally */
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      flex: 0 0 auto;
+      margin-right: 1rem;
+      text-align: right;
+      width: 120px;
+      /* Adjust this value based on your needs */
+    }
+
+    .form-group .col-form-label {
+      text-align: left;
+      /* Align labels to the right */
+
+    }
+
+    .form-group .col-8 {
+      flex-grow: 1;
+      /* Allow the input field to grow and take up remaining space */
     }
   </style>
 </head>
@@ -465,7 +493,7 @@
 
 
   <!-- Contact me form code -->
-  <div class="contact">
+  <div class="contact" style="text-align: center;">
     <section id="contact">
       <h1> Contact Me </h1>
       <form method="post" action="https://forms.un-static.com/forms/be3d0ddabf2abd8689ef3339fbb24c1f50ed8267">
